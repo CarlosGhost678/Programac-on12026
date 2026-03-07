@@ -101,7 +101,7 @@ Sirve para:
 - Probar cambios.
 - Trabajar en equipo sin interferir con el código principal.
 
-Por ejemplo, puedes tener:
+Por ejemplo:
 - master o main como versión principal.
 - login como una rama para desarrollar un sistema de inicio de sesión.
 
@@ -110,5 +110,6 @@ git branch nombre-rama
 
 Para cambiar a una rama:
 git checkout nombre-rama
+
 
 Las ramas permiten organizar el desarrollo y trabajar de forma más profesional en proyectos grandes.
