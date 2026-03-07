@@ -1,0 +1,114 @@
+¿Qué es Git?
+
+Git es un sistema de control de versiones distribuido. Sirve para controlar y administrar los cambios que se realizan en un proyecto, especialmente en proyectos de programación.
+
+Permite guardar diferentes versiones de un proyecto a lo largo del tiempo mediante “commits”, que funcionan como fotografías o snapshots del estado del código en un momento determinado.
+
+Con Git puedes:
+- Registrar todos los cambios realizados en los archivos.
+- Saber quién hizo cada cambio y cuándo lo hizo.
+- Volver a versiones anteriores si algo falla.
+- Trabajar en equipo sin perder información.
+- Mantener un historial completo del proyecto.
+
+Git fue creado por Linus Torvalds, el creador del kernel de Linux, para poder gestionar los cambios en el desarrollo de ese sistema.
+
+
+Git trabaja principalmente con tres áreas:
+- Working Directory: donde trabajas directamente con los archivos.
+- Staging Area: donde preparas los archivos antes de guardarlos.
+- Repositorio: donde se guardan definitivamente los cambios mediante commits.
+
+
+¿Cuáles son los comandos más importantes y para qué sirven?
+- git init
+Inicializa un repositorio Git en un proyecto. Se usa una sola vez al comenzar.
+
+- git status
+Muestra el estado actual de los archivos (modificados, agregados o no seguidos).
+
+- git add
+Agrega archivos al staging area para prepararlos antes de hacer un commit.
+Ejemplo: git add archivo.js
+Ejemplo: git add . (agrega todos los archivos)
+
+- git commit
+Guarda los cambios en el repositorio creando una nueva versión del proyecto.
+Ejemplo: git commit -m "Mensaje del cambio"
+
+- git log
+Muestra el historial de commits realizados.
+
+- git diff
+Muestra las diferencias entre los cambios realizados en los archivos.
+
+- git checkout
+Permite cambiar de rama o restaurar archivos a una versión anterior.
+
+- git branch
+Muestra las ramas existentes o crea nuevas ramas.
+
+- git clone
+Clona (copia) un repositorio remoto a tu computadora.
+
+- git push
+Sube los cambios locales a un repositorio remoto.
+
+- git pull
+Descarga y actualiza los cambios desde el repositorio remoto.
+
+
+¿Cuál es la diferencia entre Git y GitHub?
+
+Git es una herramienta que se instala en la computadora y sirve para controlar versiones de manera local.
+
+GitHub es una plataforma web que permite almacenar repositorios Git en internet y facilitar el trabajo colaborativo.
+
+Diferencias principales:
+- Git es el sistema de control de versiones.
+- GitHub es el servicio en la nube donde se almacenan los proyectos.
+- Git funciona sin internet.
+- GitHub necesita internet.
+- Git controla versiones.
+- GitHub permite compartir y colaborar en proyectos.
+
+
+Comandos para subir cambios a un repositorio
+
+Inicializar el repositorio (si aún no está inicializado):
+git init
+
+Agregar los archivos:
+git add .
+
+Crear el commit:
+git commit -m "Mensaje del cambio"
+
+Conectar con el repositorio remoto:
+git remote add origin URL_DEL_REPOSITORIO
+
+Subir los cambios:
+git push -u origin master
+(o main dependiendo de la rama principal)
+
+
+¿Qué es una branch?
+
+Una branch es una versión alternativa del proyecto. Permite trabajar en nuevas funcionalidades sin afectar la versión principal.
+
+Sirve para:
+- Desarrollar nuevas características.
+- Probar cambios.
+- Trabajar en equipo sin interferir con el código principal.
+
+Por ejemplo, puedes tener:
+- master o main como versión principal.
+- login como una rama para desarrollar un sistema de inicio de sesión.
+
+Para crear una rama:
+git branch nombre-rama
+
+Para cambiar a una rama:
+git checkout nombre-rama
+
+Las ramas permiten organizar el desarrollo y trabajar de forma más profesional en proyectos grandes.
